@@ -21,7 +21,7 @@ st.markdown("AI-driven pricing, demand and revenue optimisation for FruitFrost I
 def load_data():
     file_path = "FruitFrost_Pricing_Dashboard_Master.xlsx"
     historical = pd.read_excel(file_path, sheet_name="Historical_Sales")
-    competitor = pd.read_excel(file_path, sheet_name="Competitor_Data")
+    competitor = pd.read_excel(file_path, sheet_name="Competitor")
     scenario = pd.read_excel(file_path, sheet_name="Scenario_Simulation")
     cost = pd.read_excel(file_path, sheet_name="Cost_Structure")
     return historical, competitor, scenario, cost
